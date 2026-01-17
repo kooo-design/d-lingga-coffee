@@ -308,17 +308,21 @@ nav {
 /* Video in About */
 .about-video-wrapper {
   margin-top: 40px;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(161, 138, 113, 0.3);
 }
 
 .about-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1000px;
-  height: 600px;
+  height: 100%;
   border-radius: 12px;
-  box-shadow: #A18A71);
-  background: #a18a71;
 }
 
 /* Gallery Section */
