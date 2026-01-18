@@ -211,21 +211,21 @@ nav {
   max-width: 45%;
 }
 
-.hero-text h1 {
-  font-size: 42px;
+.hero-main-title {
+  font-size: clamp(28px, 5vw, 42px);
   margin-bottom: 30px;
   color: #e0e0e0;
   font-family: "montserrat", sans-serif;
   font-style: italic;
 }
-.hero-text h2 {
-  font-size: 24px;
+.hero-subtitle {
+  font-size: clamp(18px, 3vw, 24px);
   margin-bottom: 20px;
   color: #e0e0e0;
   font-family: "montserrat", sans-serif;
 }
 .hero-text p {
-  font-size: 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
   line-height: 1.8;
   margin-bottom: 40px;
   color: #e0e0e0;
@@ -979,8 +979,12 @@ footer {
     text-align: center;
   }
 
-  .hero-text h1 {
+  .hero-main-title {
     font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
   }
 
   .hero-text p {
