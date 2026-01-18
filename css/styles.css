@@ -991,6 +991,11 @@ footer {
     font-size: 14px;
   }
 
+  .order-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
   .carousel-dots {
     bottom: 20px;
     gap: 10px;
