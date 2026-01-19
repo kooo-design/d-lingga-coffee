@@ -148,6 +148,9 @@ nav {
   padding: 0 80px;
   opacity: 1;
   pointer-events: auto;
+  background:
+    linear-gradient(rgba(43, 24, 16, 0.55), rgba(43, 24, 16, 0.25)),
+    url("./hero2.jpg") center/cover no-repeat;
 }
 
 /* Optional: tweak background blend and ensure text stays readable */
@@ -891,19 +894,19 @@ footer {
 
   .hero {
     padding: 0 30px;
+    min-height: 100vh;
   }
 
   /* On small screens, keep slides absolute but adjust layout */
   .hero-content {
-    position: absolute;
-    inset: 0;
-    transform: translateX(100%);
-    opacity: 0;
-    pointer-events: none;
+    position: relative;
     display: flex;
     justify-content: center;
     padding: 100px 20px 40px 20px;
     min-height: auto;
+    background:
+      linear-gradient(rgba(43, 24, 16, 0.55), rgba(43, 24, 16, 0.25)),
+      url("./hero2.jpg") center/cover no-repeat;
   }
 
   .hero-slide-inner {
