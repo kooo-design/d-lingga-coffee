@@ -146,31 +146,8 @@ nav {
   display: flex;
   justify-content: center;
   padding: 0 80px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateX(100%);
-  transition:
-    opacity 2s ease,
-    transform 2s ease;
-}
-
-.hero-content.active {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(0);
-}
-
-/* Per-slide backgrounds: set different background for each data-slide */
-.hero-content[data-slide="0"] {
-  background:
-    linear-gradient(rgba(43, 24, 16, 0.55), rgba(43, 24, 16, 0.25)),
-    url("./hero2.jpg") center/cover no-repeat;
-}
-
-.hero-content[data-slide="1"] {
-  background:
-    linear-gradient(rgba(8, 8, 8, 0.45), rgba(34, 20, 12, 0.2)),
-    url("./hero1.jpg") center/cover no-repeat;
 }
 
 /* Optional: tweak background blend and ensure text stays readable */
@@ -251,32 +228,6 @@ nav {
 .order-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
-}
-
-/* Carousel Dots */
-.carousel-dots {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 15px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  transition:
-    background-color 0.3s,
-    transform 0.3s;
-}
-
-.dot.active {
-  background-color: #d4af37;
-  transform: scale(1.2);
 }
 
 /* About Section */
@@ -994,16 +945,6 @@ footer {
   .order-btn {
     padding: 12px 30px;
     font-size: 14px;
-  }
-
-  .carousel-dots {
-    bottom: 20px;
-    gap: 10px;
-  }
-
-  .dot {
-    width: 10px;
-    height: 10px;
   }
 
   #about,
