@@ -581,6 +581,65 @@ nav {
   background: linear-gradient(135deg, #ffd26a, #d4af37);
 }
 
+/* Informasi Section */
+#informasi {
+  padding: 100px 80px;
+  background-color: #f5f1e8;
+}
+
+.informasi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.informasi-container h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #2b1810;
+}
+
+.informasi-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.informasi-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informasi-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.informasi-text h3 {
+  font-size: 32px;
+  color: #2b1810;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.informasi-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3b302bff;
+  margin-bottom: 20px;
+}
+
+.informasi-text a {
+  margin-top: 24px;
+}
+
 /* Contact/Reservasi Section */
 #reservasi {
   padding: 100px 80px;
@@ -953,8 +1012,30 @@ footer {
   #about,
   #menu,
   #testimoni,
+  #informasi,
   #reservasi {
     padding: 60px 30px;
+  }
+
+  .informasi-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .informasi-image img {
+    max-width: 250px;
+  }
+
+  .informasi-container h2 {
+    font-size: 32px;
+  }
+
+  .informasi-text h3 {
+    font-size: 24px;
+  }
+
+  .informasi-text p {
+    font-size: 14px;
   }
 
   /* Footer adjustments for small screens */
