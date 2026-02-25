@@ -1137,3 +1137,13 @@ footer {
     height: 56px;
   }
 }
+
+/* Hide mobile bubble menu on small screens (disable floating popup menu) */
+@media (max-width: 900px) {
+  .nav-mobile,
+  .nav-mobile-menu {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
